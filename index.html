@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="py-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <title>Dev Contábil</title>
+</head>
+
+<body>
+    <div class="caixa-superior">
+        <div class="cabeçalho">
+            <h2 class="titulo-cabecalho">Dev Contábil</h2>
+            <a href="#titulo-inferior" class="link-cabecalho">Quem somos</a>
+            <a href="#titulo-meio" class="link-cabecalho">Serviços</a>
+            <a class="link-cabecalho" onclick="chameOAbacate()">Contato</a>
+        </div>
+
+        <h1>DEV CONTÁBIL</h1>
+
+        <form>
+            <h3 class="titulo-formulario">Entre em Contato</h3>
+            <label>
+                Nome
+                <input type="text" name="Nome" placeholder=" Digite seu Nome" />
+            </label>
+
+            <label>
+                E-mail
+                <input type="email" name="email" placeholder=" Digite seu E-mail" />
+            </label>
+
+            <label>
+                Fale Conosco
+                <textarea name="info" placeholder="Qual a sua dúvida?"></textarea>
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <h2 id="titulo-meio"> Nossos Serviços </h2>
+
+    <div class="caixa-central">
+        <div class="card">
+            <h3 class="titulo-card">Contabilidade completa</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Cuidamos do seu Negocio</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Cuidamos de Você</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="caixa-inferior">
+        <h2 id="titulo-inferior">Sobre Nós</h2>
+        <p class="paragrafo-inferior">
+            Basicamente, a contabilidade digital é uma categoria de serviço nova no mercado que utiliza a
+            internet e outras
+            tecnologias modernas para prestar serviços contábeis. Os contadores automatizam diversas
+            operações
+            do ramo, o que
+            torna a manutenção da regularidade da empresa, a contabilização de produtos e outros serviços
+            contábeis mais fáceis,
+            otimizados, seguros e econômicos.
+
+            Na prática, é disponibilizada uma plataforma online em que o usuário (contratante) pode realizar
+            um
+            grande número de
+            tarefas por meio da internet. Esse software aprimora o trabalho do contador, fazendo com que ele
+            consiga prestar
+            serviços de forma mais eficiente, produtiva e com maior qualidade.
+        </p>
+    </div>
+</body>
+<script>
+    let formulario = document.getElementById("formulario-contato")
+
+    function chameOAbacate() {
+        formulario.className = "mostrar-formulario"
+    }
+</script>
+
+</html>
